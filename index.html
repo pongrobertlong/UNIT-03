@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <!--title-->    
+    <title>HTML Form</title>
+</head>
+<body>
+<!--Header-->
+    <header>
+        <h1 class="title">The Code Review</h1> 
+            <div class="banner">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+    </header>
+<!--End Header-->
+<!--Beginning of Main-->
+    <main>
+        <div class="container">
+            <form action="index.html" method="post">
+                <fieldset class="contact">
+                    <!--Legend for Contact-->
+                    <legend class="fieldtitle">Contact Information</legend>
+                    <!--Ending of Legend for Contact-->
+
+                    <div class="field">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="full_name" placeholder="Required">
+                    </div>    
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email_address" placeholder="Required">
+                    </div>  
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone_number">
+                    </div>  
+                    <div class="field">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="street_address">
+                    </div>
+                    <div class="field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="field">
+                        <!--Beginning of Select-->
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option disabled selected value>Choose State</option>
+                            <option value="CA">California</option>
+                            <option value="IL">Illinois</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MI">Michigan</option>    
+                        </select>
+                        <!--Ending of Select-->
+                    </div>
+                    <div class="field">
+                        <!--Input Text for Zip Code-->
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="zip_code"> 
+                        <!--Ending of Zip Code-->  
+                    </div>
+                </fieldset>
+<!--Beginning of Newsletter Fieldset-->
+                <fieldset class="newsletter">
+                    <legend class="fieldtitle">Newsletter</legend>
+                        <!--Checkbox-->
+                        <label>Select the newsletters your would like to receive</label>
+                    <div class="check">
+                        <input type="checkbox" id="htmlnews" name="newsletter" value="html_news">
+                        <label for="htmlnews">HTML News</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="cssnews" name="newsletter" value="css_news">
+                        <label for="cssnews">CSS News</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="jsnews" name="newsletter" value="js_news">
+                        <label for="jsnews">Javascript News</label>
+                    </div>
+                        <!--End of Checkbox-->
+                        <!--Beginning of Radio-->
+                    <div class="news-formart">
+                        <label>Newsletter format</label>
+                            <div class="format">
+                                <input type="radio" id="htmlformat" name="format" value="html_format">
+                                <label for="htmlformat">HTML</label>
+                            </div>
+                            <div class="format">
+                                <input type="radio" id="plaintext" name="format" value="plain_text">
+                                <label for="plaintext">Plain Text</label>
+                            </div>
+                    </div>
+                        <!--Ending of Radio-->
+                        <!--Beginning of textarea-->
+                        <label for="othertopics">Other topics you'd like to hear about</label>
+                        <textarea id="othertopics" name="other_topics"></textarea>
+                </fieldset>
+<!--Ending of Newsletter Fieldset-->
+<!--Beginning of Submit Button-->
+                <input type="submit" class="submit" value="Sign Up">
+<!--Ending of Submit Button-->
+            </form>
+        </div>     
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <p>Copyright The Code Review</p>
+        </div>
+    </footer>
+</body>
+</html>
