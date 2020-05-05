@@ -30,7 +30,7 @@ fieldset {
 
 
 .fieldtitle {
-    color: #38434d;
+    color: white;
     font-size: 1.2em;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -43,7 +43,9 @@ textarea:focus {
     outline: 3px solid #52bdb7;
 }
 
-
+body {
+    background-color: black;
+}
 
 
 /************************
@@ -59,7 +61,6 @@ textarea:focus {
     font-size: 1.4em;
     text-align: center;
     width: 100%;
-   
 }
 
 .banner {
@@ -84,7 +85,7 @@ textarea:focus {
 .banner h2 {
     font-size: 1.2em;
     padding: 15px;
-    color: #4b5660;
+    color: white;
 }
 
 .banner p {
@@ -130,6 +131,10 @@ textarea:focus {
     margin-bottom: .6em;
 }
 
+#state {
+    color:#a0abb5;
+}
+
 #zip {
     width: 40%;
 }
@@ -152,13 +157,13 @@ textarea:focus {
 }
 
 .check,
-.format,
-.news-formart {
+.format {
 margin-top: 1.1em;
 }
 
-.news-formart {
+.news-format {
     margin-bottom: 1.4em;
+    margin-top: 2em;
 }
 
 textarea {
@@ -206,6 +211,37 @@ color: #a0abb5;
 
 @media (min-width: 768px) {
 
+    .contact,
+    .field {
+        display: flex;
+  
+    }
+
+    .field label{
+        display:flex;
+        width: 20%;
+        align-self: center;
+        font-size: .9em;
+        
+    }
+
+    .field input {
+        display: flex;
+        width: 80%;
+    }
+
+    .field select {
+        display: flex;
+        width: 80%;
+    }
+   
+    #zip {
+        width: 20%;
+    }
 
 
+    input:focus {
+        background-color:#52bdb7 ;
+    }
+        
 }

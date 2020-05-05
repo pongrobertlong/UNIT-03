@@ -6,8 +6,8 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
     <!--stylesheets-->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!--title-->    
     <title>HTML Form</title>
 </head>
@@ -25,30 +25,30 @@
     <main>
         <div class="container">
             <form action="index.html" method="post">
-                <fieldset class="contact">
+                <fieldset class="contact zoom">
                     <!--Legend for Contact-->
                     <legend class="fieldtitle">Contact Information</legend>
                     <!--Ending of Legend for Contact-->
 
                     <div class="field">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="full_name" placeholder="Required">
+                        <input required type="text" id="name" name="full_name" placeholder="Required">
                     </div>    
                     <div class="field">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email_address" placeholder="Required">
+                        <input required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"type="email" id="email" name="email_address" placeholder="Required">
                     </div>  
                     <div class="field">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone_number">
+                        <input type="tel" id="phone" name="phone_number" placeholder="(###)###-####">
                     </div>  
                     <div class="field">
                         <label for="address">Street Address</label>
-                        <input type="text" id="address" name="street_address">
+                        <input type="text" id="address" name="street_address" placeholder="Street Address">
                     </div>
                     <div class="field">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="city">
+                        <input type="text" id="city" name="city" placeholder="City">
                     </div>
                     <div class="field">
                         <!--Beginning of Select-->
@@ -65,7 +65,7 @@
                     <div class="field">
                         <!--Input Text for Zip Code-->
                         <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="zip_code"> 
+                        <input type="text" id="zip" name="zip_code" placeholder="Zip"> 
                         <!--Ending of Zip Code-->  
                     </div>
                 </fieldset>
@@ -88,7 +88,7 @@
                     </div>
                         <!--End of Checkbox-->
                         <!--Beginning of Radio-->
-                    <div class="news-formart">
+                    <div class="news-format">
                         <label>Newsletter format</label>
                             <div class="format">
                                 <input type="radio" id="htmlformat" name="format" value="html_format">
