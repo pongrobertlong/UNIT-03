@@ -211,10 +211,15 @@ color: #a0abb5;
 
 @media (min-width: 768px) {
 
-    .contact,
+    .contact {
+        display: flex;
+        flex-direction: column;
+  
+    }
+
     .field {
         display: flex;
-  
+        flex-direction: row;
     }
 
     .field label{
@@ -226,13 +231,12 @@ color: #a0abb5;
     }
 
     .field input {
-        display: flex;
         width: 80%;
     }
 
     .field select {
-        display: flex;
         width: 80%;
+       
     }
    
     #zip {

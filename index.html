@@ -25,54 +25,56 @@
     <main>
         <div class="container">
             <form action="index.html" method="post">
-                <fieldset class="contact zoom">
+                <fieldset>
                     <!--Legend for Contact-->
                     <legend class="fieldtitle">Contact Information</legend>
                     <!--Ending of Legend for Contact-->
-
-                    <div class="field">
-                        <label for="name">Full Name</label>
-                        <input required type="text" id="name" name="full_name" placeholder="Required">
-                    </div>    
-                    <div class="field">
-                        <label for="email">Email Address</label>
-                        <input required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"type="email" id="email" name="email_address" placeholder="Required">
-                    </div>  
-                    <div class="field">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone_number" placeholder="(###)###-####">
-                    </div>  
-                    <div class="field">
-                        <label for="address">Street Address</label>
-                        <input type="text" id="address" name="street_address" placeholder="Street Address">
-                    </div>
-                    <div class="field">
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city" placeholder="City">
-                    </div>
-                    <div class="field">
-                        <!--Beginning of Select-->
-                        <label for="state">State</label>
-                        <select id="state" name="state">
-                            <option disabled selected value>Choose State</option>
-                            <option value="CA">California</option>
-                            <option value="IL">Illinois</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="MI">Michigan</option>    
-                        </select>
-                        <!--Ending of Select-->
-                    </div>
-                    <div class="field">
-                        <!--Input Text for Zip Code-->
-                        <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="zip_code" placeholder="Zip"> 
-                        <!--Ending of Zip Code-->  
-                    </div>
+                    <div class="contact">
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input required type="text" id="name" name="full_name" placeholder="Required">
+                        </div>    
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"type="email" id="email" name="email_address" placeholder="Required">
+                        </div>  
+                        <div class="field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone_number" placeholder="(###)###-####">
+                        </div>  
+                        <div class="field">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="street_address" placeholder="Street Address">
+                        </div>
+                        <div class="field">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City">
+                        </div>
+                        <div class="field">
+                            <!--Beginning of Select-->
+                            <label for="state">State</label>
+                            <select id="state" name="state">
+                                <option disabled selected value>Choose State</option>
+                                <option value="CA">California</option>
+                                <option value="IL">Illinois</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MI">Michigan</option>    
+                            </select>
+                            <!--Ending of Select-->
+                        </div>
+                        <div class="field">
+                            <!--Input Text for Zip Code-->
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip_code" placeholder="Zip"> 
+                            <!--Ending of Zip Code-->  
+                        </div>
+                     </div>
                 </fieldset>
 <!--Beginning of Newsletter Fieldset-->
-                <fieldset class="newsletter">
+                <fieldset>
                     <legend class="fieldtitle">Newsletter</legend>
                         <!--Checkbox-->
+                    <div class="newsletter">
                         <label>Select the newsletters your would like to receive</label>
                     <div class="check">
                         <input type="checkbox" id="htmlnews" name="newsletter" value="html_news">
@@ -103,6 +105,7 @@
                         <!--Beginning of textarea-->
                         <label for="othertopics">Other topics you'd like to hear about</label>
                         <textarea id="othertopics" name="other_topics"></textarea>
+                    </div>
                 </fieldset>
 <!--Ending of Newsletter Fieldset-->
 <!--Beginning of Submit Button-->
