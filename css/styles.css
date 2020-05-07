@@ -245,7 +245,8 @@ color: #a0abb5;
 
 
     input:focus {
-        background-color:#52bdb7 ;
+        transition: background-color 0.5s ease;
+        background-color: #52bdb7;
     }
         
 }
